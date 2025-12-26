@@ -1,0 +1,70 @@
+# Lucas II Finance Analyst Configuration
+
+# Target HKEX stocks to monitor (add your watchlist)
+watchlist:
+  - "0700.HK"  # Tencent
+  - "0941.HK"  # China Mobile
+  - "1299.HK"  # AIA
+  - "0388.HK"  # Hong Kong Exchanges
+  - "0005.HK"  # HSBC
+  - "0939.HK"  # China Construction Bank
+  - "1398.HK"  # ICBC
+  - "2318.HK"  # Ping An Insurance
+  - "0883.HK"  # CNOOC
+  - "0011.HK"  # Hang Seng Bank
+
+# Email settings
+email:
+  enabled: true
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  sender_email: "your-email@gmail.com"  # Update this
+  # For Gmail, use App Password (not regular password)
+  # Create at: https://myaccount.google.com/apppasswords
+  sender_password: "your-app-password"  # Update this
+  recipient_email: "your-email@gmail.com"  # Update this
+  send_time: "08:00"  # HKT
+
+# Scraping settings
+scraping:
+  hkex_enabled: true
+  yahoo_enabled: true
+  google_news_enabled: true
+  max_articles_per_source: 50
+  days_lookback: 1  # How many days of news to fetch
+
+# Translation settings
+translation:
+  enabled: true
+  cache_translations: true
+  engine: "google"  # Options: google, deep, argos
+
+# Sentiment analysis
+sentiment:
+  use_finbert: true
+  use_snownlp: true
+  confidence_threshold: 0.6
+
+# Filtering
+filtering:
+  remove_duplicates: true
+  min_relevance_score: 0.3
+  keywords_important:
+    - "earnings"
+    - "dividend"
+    - "acquisition"
+    - "merger"
+    - "regulation"
+    - "investigation"
+    - "profit warning"
+    - "results"
+  keywords_exclude:
+    - "advertisement"
+    - "sponsored"
+
+# Report settings
+report:
+  max_items: 15
+  group_by_company: true
+  include_sentiment_chart: false  # Text-only for Phase 1
+  format: "html"  # Options: html, text

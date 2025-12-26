@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Database
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables
+.env
+
+# Reports
+report_*.html
+sample_report.html
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model cache (Hugging Face)
+.cache/
+transformers_cache/
+
+# Logs
+*.log

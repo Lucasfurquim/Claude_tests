@@ -1,0 +1,36 @@
+# Web Scraping
+beautifulsoup4==4.12.3
+requests==2.31.0
+lxml==5.1.0
+
+# Financial Data
+yfinance==0.2.50
+
+# Translation
+googletrans==4.0.0rc1
+deep-translator==1.11.4
+
+# Sentiment Analysis
+transformers==4.46.3
+torch==2.5.1
+snownlp==0.12.3
+
+# Data Processing
+pandas==2.2.3
+numpy==2.2.1
+
+# Database
+sqlalchemy==2.0.36
+
+# Email
+python-dotenv==1.0.1
+
+# Scheduling
+schedule==1.2.2
+
+# Configuration
+pyyaml==6.0.2
+
+# Utilities
+python-dateutil==2.9.0
+pytz==2024.2
